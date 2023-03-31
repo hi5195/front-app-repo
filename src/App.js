@@ -42,7 +42,7 @@ function App(props) {
   const [search, setSearch] = useState('eks');
 
   var url = 'http://k8s-eksdemogroup-e0353f9ab7-111336850.ap-northeast-2.elb.amazonaws.com/contents/${search}'
-
+  
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(url);
